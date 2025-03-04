@@ -34,11 +34,11 @@
     "tookit"
   ],
   "devDependencies": {
-    "eslint": "^8.53.0",
+    "eslint": "^8.57.1",
     "eslint-config-curvenote": "latest",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.0.3",
-    "typescript": "^5.2.2",
-    "vitest": "^0.34.6"
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
   }
 }
