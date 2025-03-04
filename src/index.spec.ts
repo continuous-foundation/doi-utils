@@ -92,6 +92,8 @@ describe('normalize', () => {
 describe('external DOI links', () => {
   test.each([
     ['elife', 'https://elifesciences.org/articles/59045', '10.7554/eLife.59045'],
+    ['elife', 'https://elifesciences.org/reviewed-preprints/103597', '10.7554/eLife.103597'],
+    ['elife', 'https://elifesciences.org/articles/short-report', undefined],
     [
       'wiley',
       'https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022GC010600',
@@ -113,7 +115,7 @@ describe('external DOI links', () => {
     ],
   ])('Test %s (%s) <%s>', (_, url, doiString) => {
     expect(doi.normalize(url)).toBe(doiString);
-    expect(doi.validate(url)).toBe(true);
+    expect(doi.validate(url)).toBe(doiString ? true : false);
     expect(doi.validate(url, { strict: true })).toBe(false);
   });
 });
