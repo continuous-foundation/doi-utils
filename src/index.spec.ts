@@ -28,6 +28,8 @@ describe('validate', () => {
   // Not DOIs
   test.each([
     'https://www.technologyreview.com/2020/07/17/1005396/predictive-policing-algorithms-racist-dismantled-machine-learning-bias-criminal-justice/',
+    'https://doi.org',
+    'https://doi.org/',
   ])('Validate does not identify %p', (valid) => {
     expect(doi.validate(valid)).toBe(false);
   });
