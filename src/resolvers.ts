@@ -16,7 +16,7 @@ const doiOrg: Resolver = {
 
 const elife: Resolver = {
   test(url) {
-    return url.hostname.endsWith('elifesciences.org') && url.pathname.startsWith('/articles/');
+    return url.hostname.endsWith('elifesciences.org') && /^\/articles\/\d+$/.test(url.pathname);
   },
   parse(url) {
     return `10.7554/eLife.${url.pathname.replace('/articles/', '')}`;
