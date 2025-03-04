@@ -1,6 +1,6 @@
 {
   "name": "doi-utils",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Set of utility functions to help with handling DOI(Digital Object Identifier)",
   "author": "Rowan Cockett <rowan@continuous.foundation>",
   "license": "MIT",
