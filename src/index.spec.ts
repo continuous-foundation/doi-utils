@@ -115,6 +115,16 @@ describe('external DOI links', () => {
       'https://www.biorxiv.org/content/10.1101/2020.11.02.364968v2',
       '10.1101/2020.11.02.364968',
     ],
+    [
+      'biorxiv',
+      'https://www.biorxiv.org/content/10.1101/2020.11.02.364968v1.full',
+      '10.1101/2020.11.02.364968',
+    ],
+    [
+      'biorxiv',
+      'https://www.biorxiv.org/content/10.1101/2020.11.02.364968v23.article-metrics',
+      '10.1101/2020.11.02.364968',
+    ],
   ])('Test %s (%s) <%s>', (_, url, doiString) => {
     expect(doi.normalize(url)).toBe(doiString);
     expect(doi.validate(url)).toBe(doiString ? true : false);

@@ -45,7 +45,7 @@ const biorxiv: Resolver = {
   parse(url) {
     return clumpParts(url)
       .find(validatePart)
-      ?.replace(/v([\d]*)$/, '');
+      ?.replace(/v\d+(\.[a-zA-Z-]+)?$/, '');
   },
 };
 
