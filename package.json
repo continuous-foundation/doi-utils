@@ -2,7 +2,7 @@
   "name": "doi-utils",
   "version": "2.0.6",
   "description": "Set of utility functions to help with handling DOI(Digital Object Identifier)",
-  "author": "Rowan Cockett <rowan@continuous.foundation>",
+  "author": "Rowan Cockett <rowan@continuousfoundation.org>",
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
